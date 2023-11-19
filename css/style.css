@@ -80,7 +80,7 @@ header {
 }
 
 section {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2em auto;
     padding: 1em;
     background: linear-gradient(to right, #001F3F, #104010);
