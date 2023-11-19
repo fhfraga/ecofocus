@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecofocus - Sustentabilidade para o Planeta</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo_simbolo.png" alt="Logo da Empresa">
+        </div>
+        <div class="company-info">
+            <h1>Ecofocus - Sustentabilidade para o Planeta</h1>
+            <p>Cuide do Planeta, Cuide do Futuro</p>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu">
+            <a href="../index.html">Início</a>
+            <a href="about.html">Sobre</a>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações.</p>
+
+        <!-- Formulário de Contato -->
+        <form action="processar_formulario.php" method="post">
+            <!-- Campo Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <!-- Campo Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Campo Mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <!-- Botão Enviar -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Ecofocus - Sustentabilidade para o Planeta</p>
+        <p>Todos os direitos reservados ©️2023</p>
+    </footer>
+</body>
+
+</html>
