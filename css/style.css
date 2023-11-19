@@ -1,0 +1,175 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #104010;*/
+    background: linear-gradient(to right, #001F3F, #104010);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #008000; /* Verde escuro */
+    background: linear-gradient(to right, #001F3F, #104010);
+    padding: 1em;
+    color: #ffffff; /* Branco */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.company-info {
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff; /* Branco */
+    margin: 6px 0;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #001F3F;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0; /* Adicione esta propriedade para a transição de opacidade */
+    visibility: hidden; /* Adicione esta propriedade para a transição de visibilidade */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.menu.show-menu {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu a {
+    color: #ffffff; /* Letras brancas */
+    background-color: transparent; /* Fundo transparente */
+    padding: 10px; /* Adapte conforme necessário */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.menu a:hover {
+    background-color: #050340; /* Cor azul-marinho ao passar o mouse */
+}
+
+/* Estilos para esconder o menu em telas maiores */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: linear-gradient(to right, #001F3F, #104010);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos para títulos h2 dentro da seção */
+section h2 {
+    color: #ffffff; /* Cor do texto para títulos h2 */
+}
+
+/* Estilos para parágrafos dentro da seção */
+section p {
+    color: #ffffff; /* Cor do texto para parágrafos */
+}
+
+footer {
+    background: linear-gradient(to right, #001F3F, #104010);
+    padding: 0cm;
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.slider {
+    overflow: hidden;
+    
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/* Adicione estilos para o card no slider */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #008000; /* Verde escuro */
+}
+
+.card p {
+    color: #333; /* Cor de texto padrão */
+}
+
+/* Adicione este código ao seu arquivo de estilo CSS existente */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin: auto;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #008000; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006400; /* Cor de fundo do botão ao passar o mouse */
+}
